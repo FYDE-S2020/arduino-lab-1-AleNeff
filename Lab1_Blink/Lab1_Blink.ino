@@ -24,7 +24,7 @@ void timedBlink(int interval) {
   delay(interval);                       // wait for a second
 }
 
-void loop() {/*
+void loop() {
   for(int f = 100; f>0; f-=10){
   for(int i=0; i<100; i++){
   dimmer(f, i);
@@ -32,10 +32,5 @@ void loop() {/*
   for(int i=100; i>0; i--){
   dimmer(f, i);
   }
-  }*/
-  timedBlink(500/4);
-  timedBlink(500/2);
-  timedBlink(500);
-  timedBlink(500/2);
-  timedBlink(500/4);
+  }
 }
