@@ -1,34 +1,36 @@
-Name:
+Name: Alejandro Neff
 
-EID:
+EID: ain274
 
-Team Number:
+Team Number: ??
 
 ## Questions
 
 1. Why does your program need a setup and a loop?
 
-    your answer here
+Setup is for initialization, loop is to be run continuously to make your code operate
 
 2. What is the downside to putting all your code in a loop?
 
-    your answer here
+It isn't modular to put all the code in a single loop 
 
 3. Why does your code need to be compiled?
 
-    your answer here
+The compiler turns the code we write into something the microcontroller can read
 
 4. When lowering the frequency in procedure A, step 4, what is going wrong? Brainstorm some solutions. Dimmers exist in the real world. What is their solution?
 
-    your answer here
+The frequency, while much lower than 100, isn't long enough to "trick" our eyes into thinking it's continuously on, so it blinks rather than dims.
+A solution would be to hold the duty cycle at a lower value while maintaining a high frequency - manipulating only the duty cycle seemed to leave
+the light dimmed without seeing a blink pattern.
 
 5. Why do you need to connect the logic analyzer ground to the ESP32 ground?
 
-    your answer here
+Voltage is relative, so the voltage read by the analyzer must be relative to the circuit's ground.
 
 6. What is the difference between synchronous and asynchronous communication?
 
-    your answer here
+Synchronous comms all run off the same synchronized clock - asynchronous means they run off of individual specialized clocks.
 
 7. Profile of UART: Sent X bytes in Y time 
 
