@@ -25,5 +25,12 @@ void timedBlink(int interval) {
 }
 
 void loop() {
-  timedBlink(100);
+  for(int f = 100; f>0; f-=10){
+  for(int i=0; i<100; i++){
+  dimmer(f, i);
+  }
+  for(int i=100; i>0; i--){
+  dimmer(f, i);
+  }
+  }
 }
