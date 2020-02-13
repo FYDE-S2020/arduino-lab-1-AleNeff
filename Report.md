@@ -20,7 +20,7 @@ The compiler turns the code we write into something the microcontroller can read
 
 4. When lowering the frequency in procedure A, step 4, what is going wrong? Brainstorm some solutions. Dimmers exist in the real world. What is their solution?
 
-The frequency, while much lower than 100, isn't long enough to "trick" our eyes into thinking it's continuously on, so it blinks rather than dims.
+The frequency, while it is much lower than 100, isn't quick enough to "trick" our eyes into thinking it's continuously on, so it blinks rather than dims.
 A solution would be to hold the duty cycle at a lower value while maintaining a high frequency - manipulating only the duty cycle seemed to leave
 the light dimmed without seeing a blink pattern.
 
@@ -30,7 +30,8 @@ Voltage is relative, so the voltage read by the analyzer must be relative to the
 
 6. What is the difference between synchronous and asynchronous communication?
 
-Synchronous comms all run off the same synchronized clock - asynchronous means they run off of individual specialized clocks.
+Synchronous comms require a common clock signal
+Asynchronous means they run off of individual specialized clocks.
 
 7. Profile of UART: Sent X bytes in Y time 
 
@@ -63,10 +64,10 @@ Synchronous comms all run off the same synchronized clock - asynchronous means t
 ## Screenshots
 
 Procedure A, step 1:
-![Put path to your image here ->](img/placeholder.png)
+![Put path to your image here ->]("C:\Users\aleji\109K Repos\arduino-lab-1-AleNeff\img\1stLogicScreenshot.jpg")
 
 Procedure A, step 4:
-![Put path to your image here ->](img/placeholder.png)
+![Put path to your image here ->]("C:\Users\aleji\109K Repos\arduino-lab-1-AleNeff\img\2ndLogicScreenshot.jpg")
 
 Procedure B, UART:
 ![Put path to your image here ->](img/placeholder.png)
