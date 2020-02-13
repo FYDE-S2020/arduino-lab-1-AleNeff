@@ -1,3 +1,5 @@
+#include <SoftwareSerial.h>
+
 
 
 /* Demonstrates outputting a message recieved with Serial with SPI on ESP32 

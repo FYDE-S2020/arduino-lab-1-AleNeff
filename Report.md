@@ -31,46 +31,46 @@ Voltage is relative, so the voltage read by the analyzer must be relative to the
 6. What is the difference between synchronous and asynchronous communication?
 
 Synchronous comms require a common clock signal
-Asynchronous means they run off of individual specialized clocks.
+Asynchronous means they don't require a shared clock.
 
 7. Profile of UART: Sent X bytes in Y time 
 
-    your answer here
+    11 bytes in 1 ms
 
 8. Profile of SPI: Sent X bytes in Y time
 
-    your answer here
+    11 bytes in .319 ms
 
 9. Why is SPI so much faster than UART?
 
-    your answer here
+  It is a synchronous protocol that has individual lines for each direction of communication.
 
 10. list one pro and one con of UART
 
-    your answer here
+  UART requires less wires (pro) but it is slower than SPI (con)
 
 11. list one pro and one con of SPI
 
-    your answer here
+  SPI is faster since it's synchronous (pro) but it requires more wires (con)
 
 12. list one pro and one con of I2C
 
-    your answer here
+  I2C lines require only two pins & support multiple slaves (pro) but they're sensitive to interference (con)
 
 13. Why does I2C need external resistors to work?
 
-    your answer here
+  The lines are open drain so they require pullup/pulldown resistors, but the built-in resistors are weak, requiring a slower clock speed.
 
 ## Screenshots
 
 Procedure A, step 1:
-![Put path to your image here ->]("C:\Users\aleji\109K Repos\arduino-lab-1-AleNeff\img\1stLogicScreenshot.jpg")
+![Put path to your image here ->](img/1stLogicScreenshot.jpg)
 
 Procedure A, step 4:
-![Put path to your image here ->]("C:\Users\aleji\109K Repos\arduino-lab-1-AleNeff\img\2ndLogicScreenshot.jpg")
+![Put path to your image here ->](img/2ndLogicScreenshot.jpg)
 
 Procedure B, UART:
-![Put path to your image here ->](img/placeholder.png)
+![Put path to your image here ->](img/3rdLogicScreenshot.jpg)
 
 Procedure B, SPI:
-![Put path to your image here ->](img/placeholder.png)
+![Put path to your image here ->](img/4thLogicScreenshot.jpg)
